@@ -1,0 +1,90 @@
+.app-shell {
+  width: min(1126px, 100%);
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  box-sizing: border-box;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 950px;
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.app-header-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-header h1 {
+  margin: 0.25rem 0 0.4rem;
+  color: #111;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.app-kicker,
+.ventas-eyebrow {
+  margin: 0;
+  color: #888;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.app-subtitle {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.app-image-slot {
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #c0b9b9;
+  border: 1px solid #e5e5e5;
+}
+
+.app-header-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.app-header-image:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 1rem 0 2rem;
+  }
+
+  .app-header {
+    margin: 0 1rem 1.5rem;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .app-image-slot {
+    width: 110px;
+    height: 74px;
+  }
+}

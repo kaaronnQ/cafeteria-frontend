@@ -1,0 +1,147 @@
+.venta-form-container {
+  max-width: 950px;
+  margin: 0 auto 3rem;
+  padding: 1.75rem 2rem 2rem;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 9px;
+  box-shadow: none;
+  text-align: left;
+}
+
+.venta-form-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.venta-form-heading h2 {
+  margin: 0.15rem 0 0.3rem;
+  color: #111111;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.venta-form-eyebrow {
+  margin: 0;
+  color: #888888;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.venta-form-description {
+  margin: 0;
+  color: #777777;
+  font-size: 0.88rem;
+}
+
+.venta-form-icon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 6px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.venta-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.venta-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #444444;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.venta-form select,
+.venta-form input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 42px;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #111111;
+  font: inherit;
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.venta-form input[type='date'] {
+  cursor: pointer;
+}
+
+.venta-form select:focus,
+.venta-form input:focus {
+  border-color: #111111;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+.venta-form-button {
+  grid-column: 1 / -1;
+  justify-self: end;
+  min-height: 42px;
+  margin-top: 0.35rem;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #111111;
+  border-radius: 6px;
+  background: #111111;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.venta-form-button span {
+  margin-left: 0.45rem;
+  font-size: 1rem;
+}
+
+.venta-form-button:hover {
+  background: #ffffff;
+  border-color: #111111;
+  color: #111111;
+  box-shadow: none;
+  transform: none;
+}
+
+.venta-form-button:focus-visible {
+  outline: 4px solid #111111;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .venta-form-container {
+    margin: 0 0 1.5rem;
+    padding: 1.4rem 1rem 1.25rem;
+  }
+
+  .venta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .venta-form-button {
+    width: 100%;
+  }
+}
